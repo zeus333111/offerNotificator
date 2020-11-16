@@ -3,20 +3,9 @@
  */
 package com.zeus.offernotificator
 
-import com.google.common.io.Resources.getResource
-import java.awt.SystemTray
-import java.awt.Toolkit
-import java.awt.TrayIcon
-
-class App {
-    val greeting: String
-        get() {
-            return "Hello World!"
-        }
-}
 
 fun main() {
-    println(App().greeting)
+    println("Zeus offerNotificator")
 
     val offerSearcher = OfferSearcher()
 
