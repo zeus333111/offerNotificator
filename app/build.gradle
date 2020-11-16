@@ -19,6 +19,17 @@ repositories {
     jcenter()
 }
 
+jar {
+    manifest {
+        attributes 'Main-Class': 'com.zeus.offernotificator.AppKt'
+    }
+    from{
+        configurations.compileClasspath.collect{
+            it.isDirectory() ? it : zipTree(it)
+        }
+    }
+}
+
 dependencies {
     // Align versions of all Kotlin components
     implementation platform('org.jetbrains.kotlin:kotlin-bom')
