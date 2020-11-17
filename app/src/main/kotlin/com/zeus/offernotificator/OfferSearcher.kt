@@ -15,6 +15,7 @@ class OfferSearcher {
             //val doc = Jsoup.connect("https://www.cyberpuerta.mx/Computo-Hardware/Componentes/Tarjetas-de-Video/Tarjeta-de-Video-EVGA-NVIDIA-GeForce-RTX-3090-FTW3-Ultra-Gaming-24GB-384-bit-GDDR6X-PCI-Express-x16-4-0.html").get()
             //println(doc.body())
             println("checking....")
+            //notificator.sendNotification("Disponible", url)
             val button = doc.select(".cartIconPDP")
             button.forEach {
                 println(it.toString())
